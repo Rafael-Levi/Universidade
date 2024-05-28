@@ -1,4 +1,3 @@
-
 public abstract class Pessoa {
     private String cpf;
     private String nome;
@@ -36,8 +35,11 @@ public abstract class Pessoa {
         this.idade = idade;
     }
 
+    // Método para incrementar a idade
+    public void fazerAniversario() {
+        this.idade++;
+    }
+
     // Método abstrato (pode ser implementado pelas subclasses)
     public abstract void mostrarDetalhes();
 }
-    
-    

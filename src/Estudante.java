@@ -25,11 +25,21 @@ public class Estudante extends Pessoa {
     public static void main(String[] args) {
         // Criando uma instância de Estudante
         Estudante estudante = new Estudante("12345678900", "João Silva", 20, "20230001");
+        
+        // Mostrando detalhes do estudante antes de fazer aniversário
+        System.out.println("Antes do aniversário:");
+        estudante.mostrarDetalhes();
+
+        // Incrementando a idade do estudante
+        estudante.fazerAniversario();
+        
+        // Mostrando detalhes do estudante após fazer aniversário
+        System.out.println("\nDepois do aniversário:");
         estudante.mostrarDetalhes();
 
         // Criando uma instância de Disciplina
         Disciplina disciplina = new Disciplina("INF101", "Programação I", 1);
+        System.out.println("\nDetalhes da Disciplina:");
         disciplina.mostrarDetalhes();
     }
 }
-
