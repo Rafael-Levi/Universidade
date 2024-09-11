@@ -4,7 +4,7 @@
 IndiceRemissivo/
 │
 ├── src/
-│   ├── [IndiceRemissivo.java(src\IndiceRemissivo.java)]         # Classe principal que executa o programa
+│   ├── IndiceRemissivo.java         # Classe principal que executa o programa
 │   ├── Palavra.java                 # Classe que representa a palavra e suas ocorrências
 │   ├── HashTable.java               # Implementação da tabela hash
 │   ├── No.java                      # Classe para os nós da lista encadeada
