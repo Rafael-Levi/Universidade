@@ -1,5 +1,6 @@
 #Estrutura do projeto
 
+```graphql
 IndiceRemissivo/
 │
 ├── src/
@@ -16,7 +17,7 @@ IndiceRemissivo/
 │
 └── output/
     └── indice_remissivo.txt          # Arquivo gerado com o índice remissivo
-
+```
 
 ## Descrição dos Arquivos
 
