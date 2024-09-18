@@ -27,11 +27,17 @@ public class HashTable {
     public Palavra buscar(String palavra) {
         char chave = palavra.charAt(0);
         chave = Character.toLowerCase(chave);
-
+    
         ListaEncadeada<Palavra> listaPalavras = tabela.get(chave);
+        
         if (listaPalavras != null) {
-            return listaPalavras.buscar(palavra);
+            
+            Palavra resultado = listaPalavras.buscar(palavra.toLowerCase());  // Comparar usando lowercase
+            if (resultado != null) {
+                return resultado;
+            }
         }
+        
         return null;
     }
 }

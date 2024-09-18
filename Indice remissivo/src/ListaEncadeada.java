@@ -26,14 +26,17 @@ public class ListaEncadeada<T> {
 
     public T buscar(String palavra) {
         No<T> atual = cabeca;
+        
         while (atual != null) {
-            if (atual.getValor().equals(palavra)) {
+            // Aqui, vamos garantir que a comparação seja feita corretamente
+            if (atual.getValor().toString().equalsIgnoreCase(palavra.toString())) {
                 return atual.getValor();
             }
             atual = atual.getProximo();
         }
-        return null;
+        return null;  // Se não for encontrado, retornar null
     }
+    
 
     public List<T> toList() {
         List<T> lista = new ArrayList<>();

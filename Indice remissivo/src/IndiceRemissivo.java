@@ -8,8 +8,8 @@ public class IndiceRemissivo {
     public static void main(String[] args) {
         try {
             // Leitura dos arquivos
-            List<String> linhasTexto = ArquivoUtils.lerArquivoTexto("input/texto.txt");
-            List<String> palavrasChave = ArquivoUtils.lerArquivoTexto("input/palavras_chave.txt");
+            List<String> linhasTexto = ArquivoUtils.lerArquivoTexto("./input/texto.txt");
+            List<String> palavrasChave = ArquivoUtils.lerArquivoTexto("./input/palavras_chave.txt");
 
             // Processamento
             HashTable hashTable = new HashTable();
@@ -19,7 +19,7 @@ public class IndiceRemissivo {
             Map<String, LinkedList<Integer>> indiceRemissivo = gerarIndiceRemissivo(palavrasChave, hashTable);
 
             // Escrita do índice em arquivo
-            ArquivoUtils.escreverIndiceEmArquivo(indiceRemissivo, "output/indice_remissivo.txt");
+            ArquivoUtils.escreverIndiceEmArquivo(indiceRemissivo, "./output/indice_remissivo.txt");
 
             System.out.println("Índice remissivo gerado com sucesso!");
 
