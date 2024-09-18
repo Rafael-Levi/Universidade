@@ -1,0 +1,4 @@
+programming: [1, 9]
+programs: [3]
+by: [2, 7, 9]
+Palavra rafael não foi encontrada.
